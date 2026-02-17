@@ -29,6 +29,7 @@ services:
       ]
 
   openclaw-cli:
+    profiles: ["cli"]
     image: ${OPENCLAW_IMAGE:-openclaw:local}
     environment:
       HOME: /home/node
